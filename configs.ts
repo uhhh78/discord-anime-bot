@@ -4,42 +4,26 @@
 
 export const configs = {
   // Your bot token goes here
-  token: "",
+  token: "ODc3MTg0ODM1ODE3NDU5Nzcy.YRu8Cg.oKwWxQoFX9fySK9VnbMbq3uCAQU",
   // The default prefix for your bot. Don't worry guilds can change this later.
-  prefix: "!",
+  prefix: ">",
   // This isn't required but you can add bot list api keys here.
-  botListTokens: {
-    DISCORD_BOTS_CO: "",
-    DISCORD_BOT_ORG: "",
-    BOTS_ON_DISCORD: "",
-    DISCORD_BOT_LIST: "",
-    BOTS_FOR_DISCORD: "",
-    DISCORD_BOATS: "",
-    DISCORD_BOTS_GG: "",
-    DISCORD_BOTS_GROUP: "",
-  },
   // This is the server id for your bot's main server where users can get help/support
-  supportServerId: "",
-  // These are the role ids that will enable some functionality.
-  roleIds: {
-    // If you have a patreon set up you can add the patreon vip role id here.
-    patreonVIPRoleId: "",
-  },
-  // These are the user ids that will enable some functionality.
+  supportServerId: "877185376710701066",
   userIds: {
     // You can delete the `as string[]` when you add atleast 1 id in them.
     // The user ids for the support team
     botSupporters: [] as string[],
     // The user ids for the other devs on your team
-    botDevs: [] as string[],
+    botDevs: [852967386118357013] as string[],
     // The user ids who have complete 100% access to your bot
-    botOwners: [] as string[],
+    botOwners: [852967386118357013] as string[],
   },
   webhooks: {
     // the webhook to use when the bot finds a missing translation
     missingTranslation: {
-      id: "",
-      token: "",
+      id: "893853343011700756",
+      token: "PM3gj1IHjc3ci11141BdFZpt0yq1dGK3zikCDCQdiJsqpNGTPSzOyw7yNpZGu_x7dLbX",
     },
   },
   // Lavadeno nodes
@@ -47,8 +31,8 @@ export const configs = {
     {
       // Id of the client which is connecting to the lavalink
       id: "main",
-      host: "localhost",
-      port: 2333,
+      host: "lava.link",
+      port: 80,
       password: "youshallnotpass",
     },
   ],
