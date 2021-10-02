@@ -41,11 +41,7 @@ nekosEndpoints.forEach((endpoint) => {
     execute: async function (message) {
       const url = `https://nekos.life/api/v2${endpoint.path}`;
       const result = await fetch(url).then((res) => res.json());
-      const embed = new Embed()
-      .setTitle(`${endpoint.name}`)
-      .setImage(result)
-      .setTimestamp();
-           
+      const embed = new Embed().setTitle(`${endpoint.name}`).setImage(result).setTimestamp();
 
       sendMessage(message.channelID, embed || result[endpoint.name]);
     },
